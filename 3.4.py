@@ -8,5 +8,6 @@ third_new = third.startswith('-')
 
 result_pol = 3 - first_new - sekond_new - third_new
 result_otr = 3 - result_pol
+
 print(f'Пользователь ввел  положительных чисел: {result_pol}')
 print(f'Пользователь ввел  отрицательных чисел: {result_otr}')

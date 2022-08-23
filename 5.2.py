@@ -16,5 +16,3 @@ if rez:
     print(f'{number_first} {ryx} {number_second} = {rez}')
 else:
     print('Введите корректное математическое действие!')
-
-

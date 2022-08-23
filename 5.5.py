@@ -1,5 +1,5 @@
-num = [1, 3, 6, 2, 90, -5, 0, 0, 90]
-num_sort = []
+num: list = [1, 3, 6, 2, 90, -5, 0, 0, 90]
+num_sort: list = []
 num_sort.append(num[0])
 for i in num[1:]:
     if i <= num_sort[0]:

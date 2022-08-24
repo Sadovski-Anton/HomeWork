@@ -10,3 +10,4 @@ for i in num[1:]:
             j += 1
         num_sort.insert(j, i)
 print(num_sort)
+

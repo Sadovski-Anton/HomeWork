@@ -9,6 +9,5 @@ def sity_name():
         if name in data.get(i):
             print(i)
 
+
 sity_name()
-
-

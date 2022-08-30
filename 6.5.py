@@ -1,16 +1,15 @@
 data: list = [1, 2, 3, 4, 5]
 
 
-def reverse_data(data: list)-> list:
+def reverse_data(num: list)-> list:
     a: int = 1
-    c = data.pop(0)
-    data.append(c)
-    while a != len(data):
-        c = data.pop(0)
-        data.insert(-a, c)
+    c = num.pop(0)
+    num.append(c)
+    while a != len(num):
+        c = num.pop(0)
+        num.insert(-a, c)
         a += 1
-    print(data)
+    print(num)
 
 
 reverse_data(data)
- 

@@ -6,8 +6,12 @@ data: dict = {
 }
 select_posishion: str = 'email'
 
-for i in range(1, len(data)+1):
-    a = data.get(i)
-    if select_posishion not in a or a[select_posishion] == '':
-        print(a['name'])
- 
+
+def proverka(number: str) -> str:
+    for i in range(1, len(data)+1):
+        a = data.get(i)
+        if number not in a or a[number] == '':
+            print(a['name'])
+
+
+proverka(select_posishion)

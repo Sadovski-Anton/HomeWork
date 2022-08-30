@@ -1,27 +1,38 @@
+binar_word: list = []
+
+
+def binar(word: list) -> list:
+    for i in word:
+        a = bin(ord(i))[2:]
+        a = "0" * (8 - len(a)) + a
+        binar_word.append(a)
+
+
 def vernama()-> list:
     text: str = input('Введите текст, который нужно зашифровать:')
-    key: str = input('Введите ключ, который должен быть одинаковой длинны с текстом шифрования:')
+    key: str = input('Введите ключ, одинаковой длинны с текстом шифрования:')
     if len(text) != len(key):
         print('Текст и ключ введены разной длинны!!')
         return vernama()
-    binar_word: list = []
 
-    def binar(word: list) -> list:
-        binar_word: list = []
-        for i in word:
-            a = bin(ord(i))[2:]
-            a = "0" * (8 - len(a)) + a
-            binar_word.append(a)
-        # return binar_word
-
-    binar(text)
-    text_shifr = binar_word
     binar(key)
-    key_shifr = binar_word
+    binar(text)
 
+    text_list: list = binar_word[0:len(text)]
+    key_list: list = binar_word[len(text):]
 
-    print(text_shifr)
-    print(key_shifr)
+    shifr: list = []
+    for i in range(len(text_list)):
+        rez: list = []
+        for j in range(len(text_list[i])):
+            if text_list[i][j] and key_list[i][j]:
+                rez.append('0')
+            elif not text_list[i][j] and not key_list[i][j]:
+                rez.append('0')
+            else:
+                rez.append('1')
+        shifr.insert(i, "".join(rez))
+    print(shifr)
 
 
 vernama()

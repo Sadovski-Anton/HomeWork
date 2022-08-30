@@ -1,5 +1,7 @@
 data: list = [1, 2, 3, 4, 5]
-def reversedata(data):
+
+
+def reverse_data(data: list)-> list:
     a: int = 1
     c = data.pop(0)
     data.append(c)
@@ -10,4 +12,4 @@ def reversedata(data):
     print(data)
 
 
-reversedata(data)
+reverse_data(data)

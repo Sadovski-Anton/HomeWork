@@ -11,3 +11,4 @@ def sum_number(n: int):
 
 result: list = list(map(lambda x: sum_number(data.index(x)), data))
 print(result)
+ 

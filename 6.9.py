@@ -14,4 +14,5 @@ def proverka(number: str) -> str:
             print(a['name'])
 
 
+
 proverka(select_posishion)

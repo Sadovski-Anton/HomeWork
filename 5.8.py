@@ -25,9 +25,9 @@ def vernama()-> list:
     for i in range(len(text_list)):
         rez: list = []
         for j in range(len(text_list[i])):
-            if text_list[i][j] and key_list[i][j]:
+            if text_list[i][j] == '0' and key_list[i][j] == '0':
                 rez.append('0')
-            elif not text_list[i][j] and not key_list[i][j]:
+            elif text_list[i][j] != '0' and key_list[i][j] != '0':
                 rez.append('0')
             else:
                 rez.append('1')

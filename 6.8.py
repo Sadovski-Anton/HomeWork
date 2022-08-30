@@ -3,6 +3,7 @@ data = {
     'Italy': ['Милан', 'Турин']
 }
 
+
 def sity_name():
     name = input('Введите название города:')
     for i in data.keys():

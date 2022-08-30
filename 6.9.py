@@ -10,3 +10,4 @@ for i in range(1, len(data)+1):
     a = data.get(i)
     if select_posishion not in a or a[select_posishion] == '':
         print(a['name'])
+ 

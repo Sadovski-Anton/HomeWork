@@ -57,9 +57,6 @@ def morze() -> list:
     for i in text:
         if i in alfa:
             shifr.append(alfa[i])
-        else:
-            print('Неправильно введен текст! Повторите попытку')
-            return morze()
     print(shifr)
 
 

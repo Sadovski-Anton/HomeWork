@@ -1,0 +1,22 @@
+{"orders": [
+  {
+            "orderId": 13833711,
+            "dateCreated": "2021-02-20T16:50:33.365+03:00",
+            "storeId": 658434,
+            "wbWhId": 119408,
+            "pid": 0,
+            "officeAddress": "г Ставрополь (Ставропольский край), Ленина 482/1",
+            "chrtId": 11111111,
+            "barcodes": [
+                6665956397512
+            ],
+            "status": 2,
+            "userStatus": 2,
+            "rid": 100321840623,
+            "totalPrice": 5600,
+            "currencyCode": 643,
+            "orderUID": "string",
+            "deliveryType": 1
+        }
+    ]
+}

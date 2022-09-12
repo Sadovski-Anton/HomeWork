@@ -5,7 +5,7 @@
 
 from enum import Enum
 import json
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
 
 
 class Status(int, Enum):
@@ -26,7 +26,7 @@ class DeliveryType(int, Enum):
 
 
 class Orders(BaseModel):
-    orderId: int = Field(max_length=8)
+    orderId: int
     dateCreated: str
     storeId: int
     wbWhId: int
@@ -41,3 +41,7 @@ class Orders(BaseModel):
     currencyCode: int
     orderUID: str
     deliveryType: DeliveryType
+
+with open('7_zakaz.json', 'r', encoding='utf-8') as file:
+    data = json.loads(file.read())
+    print(data)

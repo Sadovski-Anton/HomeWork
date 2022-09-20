@@ -1,17 +1,19 @@
-a = 'cedewaraaossoqqyt'
-b = 'codewars'
+import asyncio
 
 
-def scramble(s1, s2):
-    n = sorted(list(s1))
-    mm = list(s2)
-    m = set(mm)
-    for i in m:
-        if mm.count(i) > n.count(i):
-            print(4545)
-            return False
-    print(88)
-    return True
+async def foo(j):
+    for i in range(10):
+        print(j, i)
+        await  asyncio.sleep(1)
 
 
-scramble(a, b)
+async def main():
+    tasks = []
+    for i in range(10):
+        tasks.append(asyncio.create_task(foo(i)))
+
+    await  asyncio.wait(tasks)
+
+
+loop = asyncio.get_event_loop()
+loop.run_until_complete(main())
